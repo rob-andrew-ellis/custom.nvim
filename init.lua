@@ -37,7 +37,7 @@ vim.opt.undofile = true
 
 -- Spelling
 vim.opt.spelllang = 'en_gb'
-vim.opt.spell = true
+-- vim.opt.spell = true
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
