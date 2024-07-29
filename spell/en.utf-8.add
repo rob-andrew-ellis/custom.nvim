@@ -147,3 +147,7 @@ qtile
 wm
 POLYBAR
 GTK
+zsh
+WMs
+ricing
+dotfile
