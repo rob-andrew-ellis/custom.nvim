@@ -83,7 +83,7 @@ return {
       max_file_length = 5000,
 
       checkboxes = {
-        [' '] = { char = '󰄱', hl_group = 'ObsidianTodo' },
+        [' '] = { char = '', hl_group = 'ObsidianTodo' },
         ['x'] = { char = '', hl_group = 'ObsidianDone' },
         ['>'] = { char = '', hl_group = 'ObsidianRightArrow' },
         ['~'] = { char = '󰰱', hl_group = 'ObsidianTilde' },
@@ -99,14 +99,14 @@ return {
       block_ids = { hl_group = 'ObsidianBlockID' },
       hl_groups = {
         -- The options are passed directly to `vim.api.nvim_set_hl()`. See `:help nvim_set_hl`.
-        ObsidianTodo = { bold = true, fg = '#f78c6c' },
-        ObsidianDone = { bold = true, fg = '#89ddff' },
+        ObsidianTodo = { bold = true, fg = '#e67e80' },
+        ObsidianDone = { bold = true, fg = '#a7c080' },
         ObsidianRightArrow = { bold = true, fg = '#f78c6c' },
         ObsidianTilde = { bold = true, fg = '#ff5370' },
-        ObsidianImportant = { bold = true, fg = '#d73128' },
-        ObsidianBullet = { bold = true, fg = '#89ddff' },
-        ObsidianRefText = { underline = true, fg = '#c792ea' },
-        ObsidianExtLinkIcon = { fg = '#c792ea' },
+        ObsidianImportant = { bold = true, fg = '#f85552' },
+        ObsidianBullet = { bold = true, fg = '#7fbbb3' },
+        ObsidianRefText = { underline = true, fg = '#7fbbb3' },
+        ObsidianExtLinkIcon = { fg = '#7fbbb3' },
         ObsidianTag = { italic = true, fg = '#89ddff' },
         ObsidianBlockID = { italic = true, fg = '#89ddff' },
         ObsidianHighlightText = { bg = '#75662e' },
