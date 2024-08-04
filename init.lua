@@ -87,6 +87,9 @@ vim.keymap.set('n', '<C-]>', function()
   vim.cmd [[set bg=dark]]
 end)
 
+vim.keymap.set('n', '<up>', 'gk')
+vim.keymap.set('n', '<down>', 'gj')
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
