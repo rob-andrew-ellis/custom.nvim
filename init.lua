@@ -821,7 +821,7 @@ require('lazy').setup({
 
   -- My Plugins
   require 'custom.plugins.transparent',
-  require 'custom.plugins.obsidian-bridge',
+  --require 'custom.plugins.obsidian-bridge',
   require 'custom.plugins.obsidian',
   require 'custom.plugins.vim-table-mode',
   require 'kickstart.plugins.autopairs',
