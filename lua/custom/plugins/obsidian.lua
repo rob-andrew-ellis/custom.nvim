@@ -53,6 +53,12 @@ return {
     wiki_link_funk = 'use_alias_only',
     preferred_link_style = 'wiki',
 
+    templates = {
+      folder = '.obsidian/templates',
+      date_format = '%d-%m-%Y',
+      time_format = '%H:%M',
+    },
+
     ---@param url string
     follow_url_func = function(url)
       vim.fn.jobstart { 'xdg-open', url }
