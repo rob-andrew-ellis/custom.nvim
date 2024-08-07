@@ -4,9 +4,7 @@
 return {
   'oflisback/obsidian-bridge.nvim',
   config = function()
-    require('obsidian-bridge').setup {
-      obsidian_server_address = 'https://localhost:27134',
-    }
+    require('obsidian-bridge').setup()
   end,
   event = {
     'BufReadPre *.md',
