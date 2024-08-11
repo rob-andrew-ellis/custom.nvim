@@ -80,9 +80,6 @@ vim.opt.scrolloff = 10
 --  See `:help vim.keymap.set()`
 require 'custom.keymaps'
 
-vim.keymap.set('n', '<up>', 'gk')
-vim.keymap.set('n', '<down>', 'gj')
-
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -148,9 +145,9 @@ vim.opt.rtp:prepend(lazypath)
 --
 --  To update plugins you can run
 --    :Lazy update
---
---
+
 require 'custom.options'
+
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
@@ -203,15 +200,15 @@ require('lazy').setup({
       require('which-key').setup()
 
       -- Document existing key chains
-      -- require('which-key').add {
-      --   { '<leader>c', group = '[C]ode' },
-      --   { '<leader>d', group = '[D]ocument' },
-      --   { '<leader>r', group = '[R]ename' },
-      --   { '<leader>s', group = '[S]earch' },
-      --   { '<leader>w', group = '[W]orkspace' },
-      --   { '<leader>t', group = '[T]oggle' },
-      --   { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
-      -- }
+      require('which-key').add {
+        { '<leader>c', group = '[C]ode' },
+        { '<leader>d', group = '[D]ocument' },
+        { '<leader>r', group = '[R]ename' },
+        { '<leader>s', group = '[S]earch' },
+        { '<leader>w', group = '[W]orkspace' },
+        { '<leader>t', group = '[T]oggle' },
+        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+      }
     end,
   },
 
