@@ -1,5 +1,15 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
-return {}
+-- Plugin list to make management easier
+
+return {
+  -- Kickstart plugins
+  require 'kickstart.plugins.autopairs',
+  require 'kickstart.plugins.indent_line',
+
+  -- Obsidian
+  require 'custom.plugins.obsidian',
+  require 'custom.plugins.obsidian-bridge',
+
+  -- Visual
+  require 'custom.plugins.transparent',
+  require 'custom.plugins.vim-table-mode',
+}
