@@ -4,6 +4,7 @@ return {
   -- Kickstart plugins
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.indent_line',
+  require 'custom.plugins.telescope',
 
   -- Obsidian
   require 'custom.plugins.obsidian',
