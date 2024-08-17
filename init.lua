@@ -14,6 +14,18 @@ vim.g.have_nerd_font = true
 
 vim.opt.conceallevel = 2
 
+-- Make codeblocks still visible with conceallevel
+vim.api.nvim_create_autocmd('VimEnter', {
+  callback = function()
+    vim.cmd [[
+      augroup MarkdownSyntaxMatch
+        autocmd!
+        autocmd FileType markdown syntax match @conceal /```/ conceal cchar=⋯
+      augroup END
+    ]]
+  end,
+})
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.

@@ -9,7 +9,7 @@ return {
 
   -- Obsidian
   require 'custom.plugins.obsidian',
-  -- require 'custom.plugins.obsidian-bridge',
+  require 'custom.plugins.obsidian-bridge',
 
   -- Visual
   require 'custom.plugins.transparent',
