@@ -533,7 +533,9 @@ require('lazy').setup({
     end,
   },
 
-  require 'custom.themes.init',
+  {
+    require 'custom.themes.init',
+  },
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
