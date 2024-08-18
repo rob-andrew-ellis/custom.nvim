@@ -3,7 +3,7 @@
 return {
   -- Kickstart plugins
   require 'kickstart.plugins.autopairs',
-  require 'kickstart.plugins.indent_line',
+  -- require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.gitsigns',
   require 'custom.plugins.telescope',
 
@@ -14,4 +14,5 @@ return {
   -- Visual
   require 'custom.plugins.transparent',
   require 'custom.plugins.vim-table-mode',
+  require 'custom.plugins.indent-blankline',
 }
