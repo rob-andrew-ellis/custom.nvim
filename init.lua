@@ -169,7 +169,7 @@ require('lazy').setup({
         transparent_background_level = 0,
         italics = true,
         disable_italic_comments = false,
-        sign_column_background = 'grey',
+        sign_column_background = 'none',
         ui_contrast = 'low',
         dim_inactive_windows = false,
         diagnostic_text_highlight = false,
@@ -561,10 +561,6 @@ require('lazy').setup({
         },
       }
     end,
-  },
-
-  {
-    require 'custom.themes.init',
   },
 
   -- Highlight todo, notes, etc in comments
