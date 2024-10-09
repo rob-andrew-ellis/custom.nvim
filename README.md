@@ -12,5 +12,5 @@ This neovim config is a fork of kickstart.nvim, modified to better suit my use c
 
 #### Clone config
 ```sh
-git clone git@github.com:nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone git@github.com:rob-andrew-ellis/custom.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
