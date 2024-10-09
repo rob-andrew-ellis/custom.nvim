@@ -26,6 +26,13 @@ vim.api.nvim_create_autocmd('VimEnter', {
   end,
 })
 
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  pattern = { '/home/rob/.dotfiles/sway/.config/sway/config.d/*' },
+  callback = function()
+    vim.bo.filetype = 'swayconfig' -- Set the appropriate filetype
+  end,
+})
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
